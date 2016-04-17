@@ -10,7 +10,7 @@
 
 ## Operations:
 ## Insert 
-## Delete : TODO
+## Delete
 ## Traverse
 ## Reversal : TODO
 ####################################################
