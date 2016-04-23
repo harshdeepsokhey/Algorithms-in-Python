@@ -1,4 +1,4 @@
-# Design of Algorithm and Analysis (CS6101)
+# Design and Analysis of Algorithms (CS6101)
 
 Include Python module implementation of :
 - Data Structure
