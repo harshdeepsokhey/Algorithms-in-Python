@@ -1,7 +1,7 @@
 ## filename: InsertionSort.py
 
 ## sortingAndSearching
-## CS6101: Design of Analysis aand Algorothms
+## CS6101: Design and Analysis of Algorithms
 
 ## Reference : 
 ## http://www.geeksforgeeks.org

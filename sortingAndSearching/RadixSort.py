@@ -1,7 +1,7 @@
-## filename: radixSort.py
+## filename: RadixSort.py
 
 ## sortingAndSearching
-## CS6101: Design of Analysis aand Algorothms
+## CS6101: Design and Analysis of Algorithms
 
 ## Reference : 
 ## http://www.geeksforgeeks.org
@@ -13,12 +13,12 @@
 
 ####################################################
 
-class radixSort:
+class RadixSort:
 	def __init__(self, arr):
 		self.unsortedList = arr
 
 	def sort():
-		
+		pass
 
 	def display():
 		pass
