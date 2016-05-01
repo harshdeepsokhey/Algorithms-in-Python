@@ -4,19 +4,19 @@ This repo contains code written as a part of CS6101 Undergraduate CS Course in D
 
 Includes Python module implementation of :
 - Data Structure
-    > Stack
-    > Queues
-    > Linked List
-    > BST
+    - Stack
+    - Queues
+    - Linked List
+    - BST
 
 - Sorting and Searching Algorithms
-    > Insertion Sort
-    > Merge Sort
-    > Quick Sort ( +Randomized)
-    > Heap Sort
-    > Bucket Sort
-    > Counting Sort
-    > Radix Sort
+    - Insertion Sort
+    - Merge Sort
+    - Quick Sort ( +Randomized)
+    - Heap Sort
+    - Bucket Sort
+    - Counting Sort
+    - Radix Sort
 
 To Be Completed:
 - Divide and Conquer Algos
