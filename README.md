@@ -1,22 +1,26 @@
 # Design and Analysis of Algorithms (CS6101)
 
-This repo contains code written as a part of CS6101 Undergraduate CS Course in Data Structure and Algorithms (Year 2011)
+This repo contains code written as a part of CS6101 Undergraduate CS Course in Data Structure and Algorithms.
 
 Includes Python module implementation of :
 - Data Structure
     - Stack
     - Queues
     - Linked List
-    - BST
+    - Binary Search Tree*
 
 - Sorting and Searching Algorithms
+    - Binary Search*
+    - Bubble Sort*
+    - Selection Sort*
     - Insertion Sort
     - Merge Sort
-    - Quick Sort ( +Randomized)
-    - Heap Sort
+    - Quick Sort ( +Randomized*)
+    - Heap Sort*
     - Bucket Sort
     - Counting Sort
-    - Radix Sort
+    - Radix Sort*
+    - Shell Sort*
 
 To Be Completed:
 - Divide and Conquer Algos
