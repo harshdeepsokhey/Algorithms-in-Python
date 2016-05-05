@@ -16,17 +16,21 @@ Includes Python module implementation of :
     - Insertion Sort
     - Merge Sort
     - Quick Sort ( +Randomized*)
-    - Heap Sort*
+    - Heap Sort
     - Bucket Sort
     - Counting Sort
     - Radix Sort
     - Shell Sort*
 
+- Greedy Algorithms
+    - Activity Selection Problem
+
+- Dynamic Programming
+    - Longest Subsequence Problem*
+
 To Be Completed:
 - Divide and Conquer Algos
-- Greedy Algos
 - Backtracking Algos
-- Dynamic Programming Algos
 
 #References:
 - http://www.geeksforgeeks.org
