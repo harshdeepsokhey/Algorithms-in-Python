@@ -19,7 +19,7 @@ Includes Python module implementation of :
     - Heap Sort*
     - Bucket Sort
     - Counting Sort
-    - Radix Sort*
+    - Radix Sort
     - Shell Sort*
 
 To Be Completed:
