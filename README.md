@@ -26,6 +26,7 @@ Includes Python module implementation of :
     - Activity Selection Problem
 
 - Dynamic Programming
+    - Edit Distance
     - Longest Subsequence Problem*
 
 To Be Completed:
