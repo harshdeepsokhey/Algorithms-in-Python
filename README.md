@@ -28,6 +28,7 @@ Includes Python module implementation of :
 - Dynamic Programming
     - Edit Distance
     - Knapsack Problem[0-1 only]
+    - Minimum Cost Path
     - Longest Subsequence Problem*
 
 To Be Completed:
