@@ -24,12 +24,13 @@ Includes Python module implementation of :
 
 - Greedy Algorithms
     - Activity Selection Problem
+    - Max Score
 
 - Dynamic Programming
     - Edit Distance
     - Knapsack Problem[0-1 only]
     - Minimum Cost Path
-    - Longest Subsequence Problem*
+    - Longest Common Subsequence Problem*
 
 - Artificial Intelligence
     - A* pathfinding Algorithm*
