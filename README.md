@@ -31,6 +31,9 @@ Includes Python module implementation of :
     - Minimum Cost Path
     - Longest Subsequence Problem*
 
+- Artificial Intelligence
+    - A* pathfinding Algorithm*
+    
 To Be Completed:
 - Divide and Conquer Algos
 - Backtracking Algos
