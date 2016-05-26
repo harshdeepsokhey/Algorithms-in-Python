@@ -20,6 +20,9 @@ class Node:
     def getNodeId(self):
         return self.nodeId
 
+    def getNodeXY(self):
+        return map(int, list(self.nodeId))
+
     def getFcost(self):
         return self.fcost
 
@@ -88,22 +91,38 @@ class AStar:
         '''
         tempNodeList = []
         tempNode = None
-        nodeList = [(i-1,j-1),(i-1,j),(i-1,j+1),(i,j+1) ,(i+1,j+1),(i+1,j),(i+1,j-1),(i,j-1)]
+        nodeList = [(-1,-1),(-1,0),(-1,1),(0,1) ,(1,1),(1,0),(1,-1),(0,-1)]
 
         for (i,j) in nodeList:
-            tempNode = Node(i,j)
-            tempNode.gcost = self.calculateGcost()
-            tempNode.hcost = self.calculateFcost()
+            # TODO: check boundary conditions 
+            [X,Y] = cnode.getNodeXY()
+
+            tempNode = Node(X+i,Y+j)
+            # gcost = distance from start node
+            tempNode.gcost = self.getDistance(self.start,tempNode)
+            #hcost = distance from end node
+            tempNode.hcost = self.getDistance(self.end, tempNode)
+            # fcost = gcost + hcost
             tempNode.fcost = tempNode.getGcost() + tempNode.getHcost()
 
             tempNodeList.append(tempNode)
 
+        return tempNodeList
 
-    def calculateGcost(self):
-        pass
 
-    def calculateHcost(self):
-        pass
+    def getDistance(self,goal,node):
+        [gX,gY] = goal.getNodeXY()
+        [nX,nY] = node.getNodeXY()
+        dx = abs(nX - gX)
+        dy = abs(nY - gY)
+        D = 0
+        if dx > dy:
+            D = 14*dy + 10*(dx-dy)
+        else:
+            D = 14*dx - 10*(dy-dx)
+
+        return D
+
 
     def compute(self):
         self.open = []
@@ -114,7 +133,7 @@ class AStar:
 
         # while open list is not empty
         while self.open:
-
+            pass
 
 
     def display(self):
