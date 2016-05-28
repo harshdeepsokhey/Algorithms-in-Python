@@ -32,12 +32,14 @@ Includes Python module implementation of :
     - Minimum Cost Path
     - Longest Common Subsequence Problem*
 
+- Backtracking
+    - N Queen's Problem
+
 - Artificial Intelligence
     - A* pathfinding Algorithm*
     
 To Be Completed:
 - Divide and Conquer Algos
-- Backtracking Algos
 
 #References:
 - http://www.geeksforgeeks.org
