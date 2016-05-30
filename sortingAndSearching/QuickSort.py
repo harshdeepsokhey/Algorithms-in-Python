@@ -24,9 +24,6 @@ class QuickSort:
             q = self.partition(p,r)
             self.sort(p,q-1)
             self.sort(q+1,r)
-    
-    def randomize(self):
-        pass
 
     def swap(self,i,j):
         temp = self.unsortedList[i]
