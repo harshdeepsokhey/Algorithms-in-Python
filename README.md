@@ -15,7 +15,8 @@ Includes Python module implementation of :
     - Selection Sort*
     - Insertion Sort
     - Merge Sort
-    - Quick Sort ( +Randomized*)
+    - Quick Sort
+    - Randomized Quick Sort
     - Heap Sort
     - Bucket Sort
     - Counting Sort
