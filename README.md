@@ -24,6 +24,8 @@ Includes Python module implementation of :
 - Greedy Algorithms
     - Activity Selection Problem
     - Max Score
+    - Breadth First Search
+    - Depth First Search
 
 - Dynamic Programming
     - Edit Distance
