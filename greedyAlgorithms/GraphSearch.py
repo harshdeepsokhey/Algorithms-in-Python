@@ -54,9 +54,12 @@ class GraphSearch:
                 self.visited.append(currNode)
                 for edge in self.adjList[currNode]:
                     queue.append(edge)
-    
+        
     def depthFirstSearch(self,start):
-        pass
+        if start not in self.visited:
+            self.visited.append(start)
+            for edge in self.adjList[start]:
+                self.depthFirstSearch(edge)
 
     def display(self,dfs=True):
         if dfs:
