@@ -11,8 +11,6 @@ Includes Python module implementation of :
 
 - Sorting and Searching Algorithms
     - Binary Search*
-    - Bubble Sort*
-    - Selection Sort*
     - Insertion Sort
     - Merge Sort
     - Quick Sort
@@ -39,8 +37,6 @@ Includes Python module implementation of :
 - Artificial Intelligence
     - A* pathfinding Algorithm*
     
-To Be Completed:
-- Divide and Conquer Algos
 
 #References:
 - http://www.geeksforgeeks.org
