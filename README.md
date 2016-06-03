@@ -26,6 +26,7 @@ Includes Python module implementation of :
     - Max Score
     - Breadth First Search
     - Depth First Search
+    - Kruskal's MST
 
 - Dynamic Programming
     - Edit Distance
