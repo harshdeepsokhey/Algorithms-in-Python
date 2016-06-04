@@ -7,6 +7,8 @@ Includes Python module implementation of :
     - Stack
     - Queues
     - Linked List
+    - Graph
+    - Union Find
     - Binary Search Tree*
 
 - Sorting and Searching Algorithms
