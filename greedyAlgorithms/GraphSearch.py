@@ -21,20 +21,7 @@
 ## 
 ####################################################
 
-class Graph:
-    def __init__(self):
-        self.graph = []
-
-    def addEdge(self,node,edgeList):
-        '''
-        v: from node
-        w: to node
-        '''
-        self.graph.insert(node,edgeList)
-
-    def getList(self):
-        return self.graph
-
+from Graph import Graph
 
 class GraphSearch:
     def __init__(self, adjList, numVertices):
@@ -59,7 +46,7 @@ class GraphSearch:
         if start not in self.visited:
             self.visited.append(start)
             for edge in self.adjList[start]:
-                self.depthFirstSearch(edge)
+                self.depthFirstSearch(edge)       
 
     def display(self,dfs=True):
         if dfs:
