@@ -29,6 +29,7 @@ Includes Python module implementation of :
     - Breadth First Search
     - Depth First Search
     - Kruskal's MST
+    - Dijkstra's Single Source Shortest Path
 
 - Dynamic Programming
     - Edit Distance
