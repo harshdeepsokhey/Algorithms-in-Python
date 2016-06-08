@@ -22,44 +22,7 @@
 ####################################################
 
 from UnionFind import UnionFind
-
-class Node:
-    def __init__(self,src,dest,cost):
-        self.src = src
-        self.dest = dest
-        self.cost = cost
-
-class Graph:
-    def __init__(self,V):
-        self.graph = []
-        self.adjList = []
-        self.V = V
-        self.E = 0
-
-    def getPosition(self,cost):
-        pos = 0
-        for n in self.graph:
-            if cost <= n.cost:
-                return pos
-            pos = pos + 1
-        # place at end
-        return len(self.graph)
-
-    def getGraph(self):
-        return self.graph
-
-    def getNumEdges(self):
-        return self.E
-
-    def addEdge(self,node):
-        '''
-        v: from node
-        w: to node
-        '''
-        pos = self.getPosition(node.cost)
-        self.graph.insert(pos,node)
-        self.E += 1
-    
+from Graph import WeightedGraph, Node
 
 class Kruskal:
     def __init__(self,graph,V,E):
@@ -94,7 +57,7 @@ class Kruskal:
 
 if __name__=='__main__':
     V = 6
-    g = Graph(V)
+    g = WeightedGraph(V)
     node = Node(0,1,6)
     g.addEdge(node)
     node = Node(0,2,1)
