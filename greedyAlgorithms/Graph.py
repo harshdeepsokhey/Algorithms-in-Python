@@ -46,7 +46,14 @@ class WeightedGraph:
         return self.E
 
     def getNeighbours(self,n):
-        return self.neighbours[n]
+        if n == -1:
+            return self.neighbours
+
+        if n >= 0 and n < self.V:
+            return self.neighbours[n]
+        else:
+            print "Error: Index out of Bounds!!"
+            return
 
     def addEdge(self,node):
         '''
