@@ -12,7 +12,6 @@ Includes Python module implementation of :
     - Binary Search Tree*
 
 - Sorting and Searching Algorithms
-    - Binary Search*
     - Insertion Sort
     - Merge Sort
     - Quick Sort
@@ -21,7 +20,6 @@ Includes Python module implementation of :
     - Bucket Sort
     - Counting Sort
     - Radix Sort
-    - Shell Sort*
 
 - Greedy Algorithms
     - Activity Selection Problem
