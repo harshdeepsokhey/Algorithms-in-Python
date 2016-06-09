@@ -1,6 +1,6 @@
 ## filename: Dijkstra.py
 
-## Artificial Intelligence
+## Greedy Algorithms
 ## CS6101: Design and Analysis of Algorithms
 
 ## Reference : 
@@ -21,17 +21,65 @@
 
 from Graph import WeightedGraph,Node
 
+MAX_INT16 = 32767
+
 class Dijkstra:
-    def __init__(self,wGraph, E, V):
+    def __init__(self,wGraph,neighbours, E, V,src, dest):
         self.E = E
         self.V = V
         self.graph = wGraph
+        self.neighbours = neighbours
+        self.path = [-1]*self.V
+        self.dist = 0
+        self.src = src
+        self.dest = dest
+
+    def minDist(self,dist,visited):
+        m = MAX_INT16
+        for v in xrange(self.V):
+            if (dist[v] <= m) and (v not in visited):
+                m = dist[v]
+                index = v
+
+        return index
+
+
+    def getEdge(self,u,v):
+        for e in self.graph:
+            if e.src == u and e.dest == v:
+                return e
 
     def shortestPath(self):
-        pass
+        global MAX_INT16
+        # initialize 
+        dist = [MAX_INT16]*self.V
+        dist[self.src] = 0
+
+        visited = []
+        q = range(self.V)
+
+        while q:
+            x = q.pop(0)
+            u = self.minDist(dist,visited)
+            visited.append(u)
+
+            for v in self.neighbours[u]:
+                e = self.getEdge(u,v)
+                w = e.cost
+                if dist[u] + w < dist[v]:
+                    dist[v] = dist[u] + w
+                    self.path[u+1] = v
+
+        self.dist = dist
 
     def display(self):
-        pass
+        print "Shortest Distance :",self.dist[self.dest]
+        print "Shortest Path:"
+        print self.src,
+        for i in self.path:
+            if i != -1:
+                print "-->",
+                print i,
         
 if __name__=='__main__':
     V = 6
@@ -48,8 +96,6 @@ if __name__=='__main__':
     wg.addEdge(node)
     node = Node(2,4,3)
     wg.addEdge(node)
-    node = Node(2,3,5)
-    wg.addEdge(node)
     node = Node(3,5,2)
     wg.addEdge(node)
     node = Node(4,3,3)
@@ -59,10 +105,11 @@ if __name__=='__main__':
 
     wgr = wg.getGraph()
     E = wg.getNumEdges()
-    
-    for i in xrange(6):
-        print wg.getNeighbours(i)
+    n = wg.getNeighbours(-1)
 
-    dsp = Dijkstra(wgr,E,V)
+    src = 0
+    dest = 5
+    
+    dsp = Dijkstra(wgr,n,E,V,src,dest)
     dsp.shortestPath()
     dsp.display()
